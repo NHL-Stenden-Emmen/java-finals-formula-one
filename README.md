@@ -41,6 +41,7 @@ Bonuspunt snelste ronde.
 
 # Berekeningen / Output
 
+* Per seizoen en race
 * Punten totaal per rijder. (int)
 * Punten totaal per team. (int)
 * Top 3 op dit moment. (string)
