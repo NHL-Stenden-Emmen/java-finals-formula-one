@@ -6,4 +6,10 @@ public class TrackCircuit extends Circuit
     {
         super(circuitName, location, length);
     }
+
+    @Override
+    public String getTrackInformation()
+    {
+        return "Track " + this.circuitName;
+    }
 }
