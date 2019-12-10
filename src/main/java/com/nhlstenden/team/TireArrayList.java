@@ -19,6 +19,24 @@ public class TireArrayList extends ArrayList<Tire>
             return false;
         }
 
+        // Check if car has tires
+        if (this.hasTires())
+        {
+            // We have tires!
+            Tire currentTire = this.get(0);
+
+            // Check if tires are compatible
+            if (this.areTiresOfEqualType(tire, currentTire))
+            {
+                // Yes, add them to my collection
+                return super.add(tire);
+            }
+
+            // Not compatible, so don't add it
+            return false;
+        }
+
+        // We have no tires, so add them
         return super.add(tire);
     }
 
@@ -31,9 +49,8 @@ public class TireArrayList extends ArrayList<Tire>
         return !this.isEmpty();
     }
 
-    private boolean areTiresOfEqualType()
+    private boolean areTiresOfEqualType(Tire newTire, Tire oldTire)
     {
-        // TODO: Finish compare method, then finish this method
-        return false;
+        return newTire.getIdentifier().contentEquals(oldTire.getIdentifier());
     }
 }

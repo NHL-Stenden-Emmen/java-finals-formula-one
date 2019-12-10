@@ -26,6 +26,4 @@ public abstract class Tire implements Identifiable
     {
         return this.kmDriven >= this.lifeSpan;
     }
-
-    // TODO: Compare tires
 }
